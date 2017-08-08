@@ -1,4 +1,4 @@
-
+![Column](https://github.com/vmware/python-columnclient/blob/master/column.png "Column Client")
 
 # python-columnclient
 
