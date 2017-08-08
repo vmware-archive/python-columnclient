@@ -1,12 +1,10 @@
-python-columnclient
+BSD 2-Clause License
 
 Copyright (c) 2017, VMware, Inc.  All rights reserved.
 
 The BSD-2 license (the “License”) set forth below applies to all parts of
 the python-columnclient project.  You may not use this file except in
 compliance with the License. 
-
-BSD 2-Clause License
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
