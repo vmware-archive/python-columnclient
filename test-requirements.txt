@@ -1,0 +1,5 @@
+hacking
+mock
+testtools
+codecov
+coverage
