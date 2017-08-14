@@ -19,6 +19,7 @@
 ## Documentation
 
 ## Releases & Major Branches
+Column client is still in alpha state, currently at version 0.0.1.
 
 ## Contributing
 
