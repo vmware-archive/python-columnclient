@@ -20,13 +20,3 @@ class Client(object):
         self.credentials = credentials.CredentialsManager(
             self.session, self.base_url)
         self.runs = runs.RunManager(self.session, self.base_url)
-
-
-if __name__ == '__main__':
-    client = Client(hostname='10.146.29.200')
-    for run in client.runs.list():
-        print(run.id)
-        last_run = run
-
-    print(client.runs.get(last_run))
-    print(last_run.delete())
