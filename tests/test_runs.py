@@ -9,17 +9,7 @@ import testtools
 from columnclient import client
 from columnclient import runs
 
-
-class MockResponse(object):
-    """Mock class for requests.Response
-    """
-
-    def __init__(self, text='', status_code=200):
-        self.text = text
-        self.status_code = status_code
-
-    def text(self):
-        return self.text
+from tests import utils
 
 
 class TestRunManager(testtools.TestCase):
@@ -40,7 +30,7 @@ class TestRunManager(testtools.TestCase):
     @patch('requests.session')
     def test_create(self, mock_session):
         instance = mock_session.return_value
-        instance.post.return_value = MockResponse(
+        instance.post.return_value = utils.MockResponse(
             text='{"playbook_path":"/hello_world.yml",'
                  '"progress": 0,"state":"RUNNING",'
                  '"id":"0904eef0-563f-47c4-b586-851c6ea2ba88"}',
@@ -78,7 +68,7 @@ class TestRunManager(testtools.TestCase):
     @patch('requests.session')
     def test_get(self, mock_session):
         instance = mock_session.return_value
-        instance.get.return_value = MockResponse(
+        instance.get.return_value = utils.MockResponse(
             text='{"playbook_path":"/hello_world.yml",'
                  '"progress": 0,"state":"RUNNING",'
                  '"id":"0904eef0-563f-47c4-b586-851c6ea2ba88"}',
@@ -103,7 +93,7 @@ class TestRunManager(testtools.TestCase):
     def test_list(self, mock_session):
         url = 'http://127.0.0.1:48620/runs'
         instance = mock_session.return_value
-        instance.get.return_value = MockResponse(
+        instance.get.return_value = utils.MockResponse(
             text='[{"playbook_path":"/hello_world.yml",'
                  '"progress": 0,"state":"RUNNING",'
                  '"id":"0904eef0-563f-47c4-b586-851c6ea2ba88"}]',
@@ -121,7 +111,7 @@ class TestRunManager(testtools.TestCase):
     @patch('requests.session')
     def test_delete(self, mock_session):
         instance = mock_session.return_value
-        instance.delete.return_value = MockResponse(status_code=204)
+        instance.delete.return_value = utils.MockResponse(status_code=204)
         run_data = {'playbook_path': '/hello_world.yml',
                     'progress': 0,
                     'state': 'RUNNING',
