@@ -6,17 +6,25 @@
 
 ### Prerequisites
 
-* Prereq 1
-* Prereq 2
-* Prereq 3
+* python 2.7
+* requests
 
-### Build & Run
+### Install & Run
 
-1. Step 1
-2. Step 2
-3. Step 3
+Install with pip:
+```bash
+pip install python-columnclient
+```
+and in your python code do the following to list runs:
+```python
+from columnclient import client
+
+col_client = client.Client()
+col_client.runs.list()
+```
 
 ## Documentation
+Coming soon...
 
 ## Releases & Major Branches
 Column client is still in alpha state, currently at version 0.0.1.
@@ -29,3 +37,4 @@ questions about the CLA process, please refer to our [FAQ](https://cla.vmware.co
 refer to [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
+Refer to [LICENSE](LICENSE)
