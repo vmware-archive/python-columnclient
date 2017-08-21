@@ -34,7 +34,7 @@ col_client.runs.list()
 Coming soon...
 
 ## Releases & Major Branches
-Column client is still in alpha state, currently at version 0.0.1.
+Column client is still in alpha state, currently at version 0.1.0.
 
 ## Contributing
 

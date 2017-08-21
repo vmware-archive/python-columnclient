@@ -18,7 +18,7 @@ from setuptools import setup
 
 setup(
     name='columnclient',
-    version='0.0.1',
+    version='0.1.0',
     url='https://github.com/vmware/python-columnclient',
     license='BSD-2',
     author='VMware',
