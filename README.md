@@ -2,9 +2,9 @@
 
 [![Build Status](https://travis-ci.org/vmware/python-columnclient.svg?branch=master)](https://travis-ci.org/vmware/python-columnclient)
 [![codecov](https://codecov.io/gh/vmware/python-columnclient/branch/master/graph/badge.svg)](https://codecov.io/gh/vmware/python-columnclient)
-[![Latest Version](https://img.shields.io/pypi/v/columnclient.svg)](https://pypi.python.org/pypi/columnclient/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/columnclient.svg)](https://pypi.python.org/pypi/columnclient/)
-[![Format](https://img.shields.io/pypi/format/columnclient.svg)](https://pypi.python.org/pypi/columnclient/)
+[![Latest Version](https://img.shields.io/pypi/v/columnclient.svg)](https://pypi.org/project/columnclient/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/columnclient.svg)](https://pypi.org/project/columnclient/)
+[![Format](https://img.shields.io/pypi/format/columnclient.svg)](https://pypi.org/project/columnclient/)
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://github.com/vmware/python-columnclient/blob/master/LICENSE)
 
 ## Overview
