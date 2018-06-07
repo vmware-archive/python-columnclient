@@ -6,6 +6,7 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/columnclient.svg)](https://pypi.org/project/columnclient/)
 [![Format](https://img.shields.io/pypi/format/columnclient.svg)](https://pypi.org/project/columnclient/)
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://github.com/vmware/python-columnclient/blob/master/LICENSE)
+[![Slack](https://img.shields.io/badge/slack-join%20chat%20%E2%86%92-e01563.svg)](https://code.vmware.com/web/code/join)
 
 ## Overview
 
