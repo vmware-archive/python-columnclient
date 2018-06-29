@@ -2,14 +2,15 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 import json
-import urlparse
+
+from six.moves.urllib import parse
 
 
 class CredentialsManager(object):
 
     def __init__(self, session, base_url):
         self.session = session
-        self.base_url = urlparse.urljoin(base_url, 'credentials')
+        self.base_url = parse.urljoin(base_url, 'credentials')
 
     def vault_decrypt(self, value):
         creds_url = '{0}?value={1}'.format(self.base_url, value)
