@@ -2,7 +2,8 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 import json
-import urlparse
+
+from six.moves.urllib import parse
 
 
 class Run(object):
@@ -31,7 +32,7 @@ class RunManager(object):
 
     def __init__(self, session, base_url):
         self.session = session
-        self.base_url = urlparse.urljoin(base_url, 'runs')
+        self.base_url = parse.urljoin(base_url, 'runs')
 
     def create(self, playbook_file, **kwargs):
         data = {
@@ -54,7 +55,7 @@ class RunManager(object):
         return Run(self, json.loads(response.text))
 
     def get(self, run):
-        runs_url = urlparse.urljoin(self.base_url + '/', run.id)
+        runs_url = parse.urljoin(self.base_url + '/', run.id)
         response = self.session.get(runs_url)
         return Run(self, json.loads(response.text))
 
@@ -63,5 +64,5 @@ class RunManager(object):
         return [Run(self, run) for run in json.loads(response.text)]
 
     def delete(self, run):
-        runs_url = urlparse.urljoin(self.base_url + '/', run.id)
+        runs_url = parse.urljoin(self.base_url + '/', run.id)
         self.session.delete(runs_url)
