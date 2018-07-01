@@ -12,11 +12,6 @@
 
 ## Try it out
 
-### Prerequisites
-
-* python 2.7
-* requests
-
 ### Install & Run
 
 Install with pip:
